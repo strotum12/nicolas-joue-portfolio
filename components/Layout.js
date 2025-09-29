@@ -2,14 +2,11 @@ import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 export default function Layout({ children }) {
   const router = useRouter();
   const isHomePage = router.pathname === "/";
-
-  // On récupère l'URL de base depuis la variable d'environnement
-  // En local, ce sera "http://localhost:3000"
-  // En production, ce sera l'URL que tu auras définie (ex: https://www.nicolasjoue.fr)
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
   const structuredData = {

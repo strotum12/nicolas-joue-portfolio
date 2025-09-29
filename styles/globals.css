@@ -265,8 +265,14 @@ nav .nav-list {
   transform: scale(1.1);
 }
 
-main { flex: 1; display: flex; justify-content: center; align-items: flex-start; padding: 20px 0; }
-#content { background-color: #ffffff; max-width: 1000px; padding: 20px; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); box-sizing: border-box; }
+main { 
+  flex: 1; 
+  display: flex; 
+  justify-content: center; 
+  align-items: stretch;
+  padding: 20px 0; 
+}
+#content { background-color: #ffffff; max-width: 1000px; padding: 20px; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); box-sizing: border-box; width: 100% }
 h2, p { margin: 0; }
 h2 { margin-bottom: 1em; }
 p {
@@ -428,6 +434,8 @@ details[open] summary:before { content: "– "; color: #fff; }
 }
 
 #__next { display: flex; flex-direction: column; min-height: 100vh; }
+
+
 
 .skills-intro { color: #555; margin-bottom: 2.5rem; text-align: center; font-size: 1.1rem; }
 .skills-layout-grid { display: grid; gap: 40px; grid-template-columns: 1fr; }
@@ -890,4 +898,390 @@ details[open] summary:before { content: "– "; color: #fff; }
   .job-status-badge {
     margin-top: 0;
   }
+}
+
+
+.intro {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  color: #555;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contactCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(52, 73, 94, 0.07);
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(52, 73, 94, 0.12);
+}
+
+.contactIcon {
+  margin-bottom: 1rem;
+}
+
+.contactCard img[alt="GitHub"] {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.contactCard h3 {
+  color: var(--blue-main, #34495e);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.contactCard p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  min-height: 50px;
+  text-align: center;
+}
+
+.contactLink {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: var(--blue-main, #34495e);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.contactLink:hover {
+  background-color: var(--yellow-accent, #ffcc33);
+  color: var(--blue-main, #34495e);
+}
+
+.emailContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.emailLink {
+  color: var(--blue-main, #34495e);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.copyButton {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.copyButton:hover {
+  background-color: #e0e0e0;
+}
+
+.copyFeedback {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+
+.contactIcon, .svgIcon {
+  margin-bottom: 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.svgIcon {
+  color: var(--blue-main, #34495e); 
+}
+
+.contactCard img[alt="GitHub"] {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.formWrapper {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.formWrapper h3 {
+  text-align: center;
+  color: var(--blue-main, #34495e);
+  margin-bottom: 1.5rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: var(--blue-main, #34495e);
+}
+
+.submitButton {
+  background-color: var(--blue-main, #34495e);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: var(--yellow-accent, #ffcc33);
+  color: var(--blue-main, #34495e);
+}
+
+.formStatus {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.contact-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  color: #555;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(52, 73, 94, 0.07);
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(52, 73, 94, 0.12);
+}
+
+.contact-icon {
+  margin-bottom: 1rem;
+}
+
+.contact-card img[alt="GitHub"] {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.contact-card h3 {
+  color: var(--blue-main, #34495e);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  min-height: 50px;
+  text-align: center;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: var(--blue-main, #34495e);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-link:hover {
+  background-color: var(--yellow-accent, #ffcc33);
+  color: var(--blue-main, #34495e);
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.email-link {
+  color: var(--blue-main, #34495e);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.copy-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #e0e0e0;
+}
+
+.copy-feedback {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.contact-icon, .svg-icon {
+  margin-bottom: 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.svg-icon {
+  color: var(--blue-main, #34495e); 
+}
+
+.contact-card img[alt="GitHub"] {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.form-wrapper {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form-wrapper h3 {
+  text-align: center;
+  color: var(--blue-main, #34495e);
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--blue-main, #34495e);
+}
+
+.submit-button {
+  background-color: var(--blue-main, #34495e);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--yellow-accent, #ffcc33);
+  color: var(--blue-main, #34495e);
+}
+
+.form-status {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #28a745;
 }

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import styles from "../styles/contact.module.css";
 import ContactForm from "../components/ContactForm";
 
 export default function ContactPage() {
@@ -29,16 +28,16 @@ export default function ContactPage() {
 
       <section>
         <h2>Me Contacter</h2>
-        <p className={styles.intro}>
+        <p className="contact-intro">
           Une question, une proposition de collaboration ou simplement envie de
           discuter ? N&apos;hésitez pas à utiliser l&apos;un des moyens
           ci-dessous.
         </p>
 
-        <div className={styles.contactGrid}>
-          <div className={styles.contactCard}>
+        <div className="contact-grid">
+          <div className="contact-card">
             <svg
-              className={styles.svgIcon}
+              className="svg-icon"
               width={50}
               height={50}
               fill="none"
@@ -56,32 +55,29 @@ export default function ContactPage() {
             </svg>
             <h3>Par Email</h3>
             <p>Le moyen le plus direct pour me joindre.</p>
-            <div className={styles.emailContainer}>
-              <a
-                href="mailto:nicolasjoue916@gmail.com"
-                className={styles.emailLink}
-              >
+            <div className="email-container">
+              <a href="mailto:nicolasjoue916@gmail.com" className="email-link">
                 nicolasjoue916@gmail.com
               </a>
               <button
                 onClick={() => handleCopy("nicolasjoue916@gmail.com")}
-                className={styles.copyButton}
+                className="copy-button"
               >
                 Copier
               </button>
             </div>
             {copySuccess && (
-              <span className={styles.copyFeedback}>{copySuccess}</span>
+              <span className="copy-feedback">{copySuccess}</span>
             )}
           </div>
 
-          <div className={styles.contactCard}>
+          <div className="contact-card">
             <Image
               src="/LI-In-Bug.png"
               alt="LinkedIn"
               width={50}
               height={50}
-              className={styles.contactIcon}
+              className="contact-icon"
             />
             <h3>LinkedIn</h3>
             <p>Pour un contact professionnel et pour suivre mon parcours.</p>
@@ -89,19 +85,19 @@ export default function ContactPage() {
               href="https://www.linkedin.com/in/nicolas-joué-246569204/"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.contactLink}
+              className="contact-link"
             >
               Voir mon profil
             </a>
           </div>
 
-          <div className={styles.contactCard}>
+          <div className="contact-card">
             <Image
               src="/github-mark.png"
               alt="GitHub"
               width={50}
               height={50}
-              className={styles.contactIcon}
+              className="contact-icon"
             />
             <h3>GitHub</h3>
             <p>Pour explorer mes projets et contributions de plus près.</p>
@@ -109,15 +105,15 @@ export default function ContactPage() {
               href="https://github.com/nico916"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.contactLink}
+              className="contact-link"
             >
               Explorer mes dépôts
             </a>
           </div>
 
-          <div className={styles.contactCard}>
+          <div className="contact-card">
             <svg
-              className={styles.svgIcon}
+              className="svg-icon"
               width={50}
               height={50}
               viewBox="0 0 24 24"
@@ -137,8 +133,8 @@ export default function ContactPage() {
             </p>
             <a
               href="/CV_Nicolas_JOUE.pdf"
-              download
-              className={styles.contactLink}
+              download="CV_Nicolas_Joué.pdf"
+              className="contact-link"
             >
               Télécharger le CV
             </a>
