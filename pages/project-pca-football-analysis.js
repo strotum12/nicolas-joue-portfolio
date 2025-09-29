@@ -220,8 +220,8 @@ export default function PcaFootballPage() {
           quadrants distincts, chacun représentant un profil de joueur clair et
           cohérent, validant ainsi la pertinence de l&apos;analyse.
         </p>
-        <div className="compact-table">
-          <table>
+        <div className="table-wrapper">
+          <table className="compact-table">
             <thead>
               <tr>
                 <th>Quadrant</th>
