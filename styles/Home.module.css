@@ -1,0 +1,236 @@
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  background: radial-gradient(circle at 10% 20%, var(--blue-light) 0%, #ffffff 40%);
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.heroTitle {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, var(--blue-main), #5c7a99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.animatedLine {
+  height: 4px;
+  width: 150px;
+  background-color: var(--yellow-accent);
+  border-radius: 2px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  animation: expandLine 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  transform-origin: left;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: #555;
+  font-weight: 400;
+  margin: 0;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  outline: none; 
+}
+
+.infoCardsContainer {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.infoCard {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.infoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.iconWrapper {
+  flex-shrink: 0;
+  background-color: var(--blue-light);
+  color: var(--blue-main);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconWrapper svg {
+  width: 24px;
+  height: 24px;
+}
+
+.cardContent h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--blue-main);
+  font-weight: 600;
+}
+
+.cardContent p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.highlightCard {
+  background: var(--blue-main);
+  color: white;
+  border: none;
+}
+
+.highlightCard:hover {
+  box-shadow: 0 12px 35px rgba(52, 73, 94, 0.3);
+}
+
+.highlightCard .iconWrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--yellow-accent);
+}
+
+.highlightCard .cardContent h3 {
+  color: white;
+}
+
+.highlightCard .cardContent p {
+  color: #bdc3c7;
+}
+
+.highlightCard .cardContent strong {
+  color: var(--yellow-accent);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.leftColumn {
+  text-align: left;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes expandLine {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 850px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+  .leftColumn, .rightColumn {
+    align-items: center;
+  }
+  .ctaButtons {
+    justify-content: center;
+  }
+  .animatedLine {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.heroTagline {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  color: #4a627a;
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+.cardTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cardTitleWrapper h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--blue-main);
+  font-weight: 600;
+}
+
+.arrowIcon {
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+
+.infoCard:hover .arrowIcon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.arrowIcon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--blue-main);
+}
