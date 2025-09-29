@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-import imageIllustration from "../public/ImageIllustration.jpg";
-import binaryMasksIllustration from "../public/BinaryMasksIllustration.jpg";
+import imageIllustration from "../public/ImageIllustration.JPG";
+import binaryMasksIllustration from "../public/BinaryMasksIllustration.JPG";
 import segmentationResult from "../public/segmentation_result.png";
 
 export default function StageUtsPage() {
