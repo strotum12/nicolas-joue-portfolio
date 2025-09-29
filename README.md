@@ -27,7 +27,7 @@ Every component, from the interactive project cards to the page transitions, was
 
 The portfolio is deployed on Vercel and can be accessed directly.
 
-**👉 [Visit the live website](https://YOUR_FINAL_URL_HERE)**  
+**👉 [Visit the live website](https://nicolasjoue.com)**  
 
 ## Key Features
 
